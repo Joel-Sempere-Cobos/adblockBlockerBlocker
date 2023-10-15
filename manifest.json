@@ -3,8 +3,8 @@
   "name": "adblockBlockerBlocker",
   "description": "Blocks adblock blockers in some websites",
   "version": "1.0",
-  "action": {
-    "default_icon": "/images/adblockBlockerBlockerIcon.webp"
+  "icons": {
+    "128": "/images/adblockBlockerBlockerIcon.png"
   },
   "permissions": ["tabs", "activeTab", "scripting"],
   "background": {
