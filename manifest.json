@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "adblockBlockerBlocker",
+  "description": "Blocks adblock blockers in some websites",
+  "version": "1.0",
+  "action": {
+    "default_icon": "/images/adblockBlockerBlockerIcon.webp"
+  },
+  "permissions": ["tabs", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["https://www.youtube.com/*"]
+}
