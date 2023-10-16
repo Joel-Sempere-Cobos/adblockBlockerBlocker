@@ -3,7 +3,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     chrome.scripting
       .executeScript({
         target: { tabId: tabId },
-        files: ['./adblockUnblocker.js'],
+        files: ['src/adblockUnblocker.js'],
       })
       .then(() => {
         console.log('INJECTED THE FOREGROUND SCRIPT.');
