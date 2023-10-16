@@ -2,8 +2,8 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
   if (changeInfo.status === 'complete' && /^http/.test(tab.url)) {
     chrome.scripting
       .executeScript({
-        target: { tabId: tabId },
-        files: ['src/adblockUnblocker.js'],
+        target: { tabId },
+        files: ['src/adblockRemover.js'],
       })
       .then(() => {
         console.log('INJECTED THE FOREGROUND SCRIPT.');
