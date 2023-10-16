@@ -4,11 +4,11 @@
   "description": "Blocks adblock blockers in some websites",
   "version": "1.0",
   "icons": {
-    "128": "/images/adblockBlockerBlockerIcon.png"
+    "128": "src/images/adblockBlockerBlockerIcon.png"
   },
   "permissions": ["tabs", "activeTab", "scripting"],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "src/background.js"
   },
   "host_permissions": ["https://www.youtube.com/*"]
 }
